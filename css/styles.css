@@ -61,6 +61,50 @@
   }
 }
 
+/* --- Ribbon banner --- */
+.ribbon {
+  overflow: hidden;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-sage-500);
+  margin: var(--space-8) 0;
+}
+.ribbon-track {
+  display: flex;
+  width: max-content;
+  animation: ribbon-scroll 22s linear infinite;
+}
+.ribbon-group {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.ribbon-group span {
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-surface);
+  font-family: var(--font-serif);
+  font-size: var(--text-md);
+  white-space: nowrap;
+  padding: var(--space-3) var(--space-4);
+}
+.ribbon-group span::after {
+  content: "\2726";
+  margin-left: var(--space-4);
+  opacity: 0.6;
+}
+
+@keyframes ribbon-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ribbon-track { animation: none; }
+}
+
 /* --- H.A.L.T. --- */
 .halt-list {
   list-style: none;

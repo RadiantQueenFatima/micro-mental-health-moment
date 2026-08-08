@@ -52,6 +52,24 @@
     </div>
   </div>
 
+  <!-- Personalized guide capture -->
+  <section class="section card cta-card" id="guide-capture">
+    <h2>Want your personalized guide?</h2>
+    <p class="cta-blurb">Add your name and email and we'll send your personalized Micro Mental Health Moment guide.</p>
+    <form class="capture-form" data-source="personalized_guide">
+      <div class="field">
+        <label for="guide-name">Name</label>
+        <input type="text" id="guide-name" name="name" required>
+      </div>
+      <div class="field">
+        <label for="guide-email">Email</label>
+        <input type="email" id="guide-email" name="email" required>
+      </div>
+      <button type="submit" class="btn-primary">Send me my guide</button>
+      <p class="form-status" aria-live="polite"></p>
+    </form>
+  </section>
+
   <!-- H.A.L.T. -->
   <section class="section">
     <h2>Before reacting, remember H.A.L.T.</h2>
@@ -125,24 +143,6 @@
         <textarea id="next-step" name="next-step" rows="2"></textarea>
       </div>
 
-    </form>
-  </section>
-
-  <!-- Personalized guide capture -->
-  <section class="section card cta-card" id="guide-capture">
-    <h2>Want your personalized guide?</h2>
-    <p class="cta-blurb">Add your name and email and we'll send your personalized Micro Mental Health Moment guide.</p>
-    <form class="capture-form" data-source="personalized_guide">
-      <div class="field">
-        <label for="guide-name">Name</label>
-        <input type="text" id="guide-name" name="name" required>
-      </div>
-      <div class="field">
-        <label for="guide-email">Email</label>
-        <input type="email" id="guide-email" name="email" required>
-      </div>
-      <button type="submit" class="btn-primary">Send me my guide</button>
-      <p class="form-status" aria-live="polite"></p>
     </form>
   </section>
 

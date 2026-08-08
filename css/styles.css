@@ -165,6 +165,33 @@
   margin-bottom: var(--space-6);
 }
 
+/* --- CTA cards (guide capture / work with me) --- */
+.cta-card { text-align: center; }
+.cta-card h2 { margin-bottom: var(--space-2); }
+.cta-blurb {
+  color: var(--color-neutral-600);
+  max-width: 40ch;
+  margin: 0 auto var(--space-6);
+}
+.capture-form {
+  max-width: 40ch;
+  margin: 0 auto;
+  text-align: left;
+}
+.capture-form .btn-primary {
+  width: 100%;
+  justify-content: center;
+  margin-top: var(--space-2);
+}
+.form-status {
+  min-height: 1.25em;
+  margin: var(--space-3) 0 0;
+  font-size: var(--text-sm);
+  text-align: center;
+}
+.form-status.success { color: var(--color-sage-700); }
+.form-status.error { color: var(--color-blush-500); }
+
 /* --- Closing quote --- */
 blockquote.closing {
   margin: var(--space-8) 0;

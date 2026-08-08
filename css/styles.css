@@ -1,0 +1,168 @@
+/* Page layout for the Micro Mental Health Moment worksheet.
+   Built only from design-system.css tokens/classes. */
+
+.wrap {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+}
+
+/* --- Hero --- */
+.hero {
+  text-align: center;
+  padding-top: var(--space-8);
+}
+.hero .eyebrow {
+  font-size: var(--text-sm);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-sage-700);
+  margin-bottom: var(--space-2);
+}
+.hero h1 {
+  font-size: var(--text-2xl);
+}
+.hero .gift-line {
+  font-size: var(--text-md);
+  color: var(--color-neutral-600);
+  margin-bottom: var(--space-6);
+}
+.hero p.welcome {
+  font-size: var(--text-md);
+  max-width: 46ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* --- H.A.L.T. --- */
+.halt-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-4);
+}
+.halt-item {
+  display: flex;
+  gap: var(--space-4);
+  align-items: flex-start;
+}
+.halt-item .halt-text strong {
+  display: block;
+  font-size: var(--text-md);
+  margin-bottom: var(--space-1);
+}
+.halt-item .halt-text span {
+  color: var(--color-neutral-600);
+}
+
+/* --- Micro Reset --- */
+.reset-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-3);
+}
+.reset-item {
+  display: flex;
+  gap: var(--space-4);
+  align-items: center;
+}
+.reset-item .badge {
+  background: var(--color-blush-100);
+  color: var(--color-blush-500);
+  filter: brightness(0.75) saturate(1.4);
+}
+.reset-item p {
+  margin: 0;
+  font-size: var(--text-md);
+}
+
+/* --- Transition callout --- */
+.transition-callout {
+  text-align: center;
+  font-family: var(--font-serif);
+  font-size: var(--text-lg);
+  color: var(--color-sage-700);
+  padding: var(--space-6) 0;
+}
+
+/* --- Worksheet form --- */
+.worksheet-title {
+  text-align: center;
+  margin-bottom: var(--space-6);
+}
+
+/* --- Closing quote --- */
+blockquote.closing {
+  margin: var(--space-8) 0;
+  text-align: center;
+  font-family: var(--font-serif);
+  font-size: var(--text-xl);
+  color: var(--color-neutral-900);
+  line-height: var(--leading-heading);
+}
+blockquote.closing p { margin: 0; }
+blockquote.closing p.need {
+  color: var(--color-sage-700);
+}
+
+/* --- Footer / Stay Connected --- */
+.footer {
+  padding-bottom: var(--space-8);
+}
+.footer h2 {
+  text-align: center;
+  font-size: var(--text-lg);
+  margin-bottom: var(--space-6);
+}
+.contact-card {
+  margin-bottom: var(--space-4);
+}
+.contact-card h3 {
+  font-family: var(--font-sans);
+  font-size: var(--text-md);
+  margin-bottom: var(--space-1);
+}
+.contact-card .role {
+  color: var(--color-neutral-600);
+  font-size: var(--text-sm);
+  margin-bottom: var(--space-4);
+}
+.contact-links {
+  display: grid;
+  gap: var(--space-2);
+}
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  min-height: 44px;
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-sm);
+  background: var(--color-bg);
+  color: var(--color-neutral-900);
+  text-decoration: none;
+  font-size: var(--text-base);
+}
+.contact-link:hover { background: var(--color-sage-100); }
+.contact-link .icon { font-size: var(--text-md); }
+
+.qr-note {
+  text-align: center;
+  color: var(--color-neutral-600);
+  font-size: var(--text-sm);
+  margin-top: var(--space-6);
+}
+
+.trademark-note {
+  text-align: center;
+  color: var(--color-neutral-600);
+  font-size: var(--text-xs);
+  padding-bottom: var(--space-6);
+}
+
+@media (min-width: 640px) {
+  .halt-list { grid-template-columns: 1fr 1fr; }
+}

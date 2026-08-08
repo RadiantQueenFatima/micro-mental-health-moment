@@ -120,6 +120,21 @@ blockquote.closing p.need {
 .contact-card {
   margin-bottom: var(--space-4);
 }
+.contact-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-4);
+}
+.contact-photo {
+  width: 72px;
+  height: 72px;
+  min-width: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--color-sage-100);
+  box-shadow: var(--shadow-soft);
+}
 .contact-card h3 {
   font-family: var(--font-sans);
   font-size: var(--text-md);
@@ -128,7 +143,22 @@ blockquote.closing p.need {
 .contact-card .role {
   color: var(--color-neutral-600);
   font-size: var(--text-sm);
-  margin-bottom: var(--space-4);
+  margin: 0;
+}
+.qr-figure {
+  margin: var(--space-4) 0 0;
+  text-align: center;
+}
+.qr-figure img {
+  width: 140px;
+  height: 140px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-neutral-200);
+}
+.qr-figure figcaption {
+  margin-top: var(--space-2);
+  font-size: var(--text-xs);
+  color: var(--color-neutral-600);
 }
 .contact-links {
   display: grid;
@@ -163,6 +193,3 @@ blockquote.closing p.need {
   padding-bottom: var(--space-6);
 }
 
-@media (min-width: 640px) {
-  .halt-list { grid-template-columns: 1fr 1fr; }
-}
